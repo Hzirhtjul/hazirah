@@ -5,25 +5,139 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".FirstActivity">
 
+
+    <ImageView
+        android:id="@+id/ivGame"
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/game"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:text="Register Now!!"
+        android:textColor="@color/white"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/text_bg"
+        android:layout_centerHorizontal="true"
         android:ems="10"
+        android:hint="Name"
         android:inputType="text"
-        android:text="@string/user_name" />
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_margin="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_person_outline_24"/>
+
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        />
+
+    <EditText
+        android:id="@+id/etBirthdayDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:hint="Select Birthday Date"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+    />
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:hint="Address"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        />
+
+
+    <EditText
+        android:id="@+id/etNoPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_bg"
+        android:ems="10"
+        android:hint="Number Phone"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_margin="9dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_baseline_phone_iphone_24"/>
+
 
     <Button
         android:id="@+id/btnName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20pt"
+        android:layout_marginHorizontal="60pt"
+        android:layout_below="@+id/etEmail"
         android:onClick="send_data"
-        android:text="Send Data" />
-
-
-
+        android:text="Register"
+        android:textColor="@android:color/white" />
+    />
 
 </LinearLayout>
